@@ -1,0 +1,27 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 1.5em;
+    gap: 2em;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+li {
+    a {
+     color: #29323e;
+    padding: 8px;
+    display: block;
+    font-size: 36px;
+    line-height: 20px;
+
+    &:hover svg {
+        color: #ba1d253f ;
+        transform: scale(1.2);
+    }
+    }
+}
+

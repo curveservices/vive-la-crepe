@@ -10,14 +10,13 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.scss'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
     
     return ( 
         <div className={styles.navbar}>
-         
             <nav className={showNav ? 'active' : ''}>
                 <NavLink
                 exact='true'
