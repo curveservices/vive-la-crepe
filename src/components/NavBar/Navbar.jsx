@@ -17,58 +17,60 @@ const Navbar = () => {
     
     return ( 
         <div className={styles.navbar}>
-            <nav className={showNav ? 'active' : ''}>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.home}
-                to='/'
-                onClick={() => setShowNav(true)} >
-                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.about}
-                to='/about'
-                onClick={() => setShowNav(true)} >
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.menu}
-                to='/menu'
-                onClick={() => setShowNav(true)} >
-                    <FontAwesomeIcon icon={faUtensils} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.blog}
-                to='/blog'
-                onClick={() => setShowNav(true)} >
-                    <FontAwesomeIcon icon={faBlog} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.contact}
-                to='/blog'
-                onClick={() => setShowNav(true)} >
-                    <FontAwesomeIcon icon={faEnvelopeOpen} color="#4d4d4e" />
-                </NavLink>
-
-                <FontAwesomeIcon 
+            <nav className={showNav ? styles.active : ''}>
+            <FontAwesomeIcon 
                 icon={faClose} 
-                color='#'/>
+                color='#29323e'
+                size='3x'
+                className={styles.close}
+                onClick={() => setShowNav(false)}/>
+                <NavLink
+                exact='true'
+                activeclassname="actice"
+                className={styles.homeLink}
+                to='/'
+                onClick={() => setShowNav(false)} >
+                    <FontAwesomeIcon icon={faHome} color="#29323e" />
+                </NavLink>
+                <NavLink
+                exact='true'
+                activeclassname="actice"
+                className={styles.aboutLink}
+                to='/about'
+                onClick={() => setShowNav(false)} >
+                    <FontAwesomeIcon icon={faUser} color="#29323e" />
+                </NavLink>
+                <NavLink
+                exact='true'
+                activeclassname="actice"
+                className={styles.menuLink}
+                to='/menu'
+                onClick={() => setShowNav(false)} >
+                    <FontAwesomeIcon icon={faUtensils} color="#29323e" />
+                </NavLink>
+                <NavLink
+                exact='true'
+                activeclassname="actice"
+                className={styles.blogLink}
+                to='/blog'
+                onClick={() => setShowNav(false)} >
+                    <FontAwesomeIcon icon={faBlog} color="#29323e" />
+                </NavLink>
+                <NavLink
+                exact='true'
+                activeclassname="actice"
+                className={styles.contactLink}
+                to='/blog'
+                onClick={() => setShowNav(false)} >
+                    <FontAwesomeIcon icon={faEnvelopeOpen} color="#29323e" />
+                </NavLink>
             </nav>
             <FontAwesomeIcon
                 onClick={() => setShowNav(true)}
                 icon={faBars}
-                color="#000"
-                size="3x"
-                className={styles.hamburger}
+                color="29323e"
+                size="2x"
+                className={`${showNav ? styles.hide : styles.hamburger}`}
             />
         </div>
      );

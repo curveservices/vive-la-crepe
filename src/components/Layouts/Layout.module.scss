@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    object-fit: cover;
+    width: 250px;
+    margin-left: 0px;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 40px;
+    left: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        object-fit: contain;
+        width: 150px;
+    }
+}

@@ -15,7 +15,7 @@ const SocialIcons = () => {
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
                 </li>
-                <li>
+                <li className={styles.icons}>
                     <a
                     href="https://www.facebook.com/vivecrepe/"
                     target='_blank'
@@ -24,7 +24,7 @@ const SocialIcons = () => {
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
                 </li>
-                <li>
+                <li className={styles.icons}>
                     <a
                     href="https://twitter.com/ViveCrepe"
                     target='_blank'

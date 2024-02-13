@@ -1,0 +1,25 @@
+$primary-color: #29323e;
+
+@font-face {
+    font-family: "Lato Black";
+    src: url('./assets/fonts/Lato-Black.ttf') format('ttf');
+}
+
+input,
+textarea {
+    font-family: 'Lato Black';
+}
+
+.loader-active {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 50%;
+    bottom: 0;
+    width: 50px;
+    height: auto;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+}
