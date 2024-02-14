@@ -1,6 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 import SocialIcons from '../Socials/SocialIcons'
 import Navbar from '../NavBar/Navbar'
 import Logo from '../../assets/images/vlc.png'

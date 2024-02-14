@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import TextAnimate from '../../AnimatedLetters/TextAnimate'
 import logo from '../../../assets/images/vlc.png'
 import './index.scss'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('textAnimate')
@@ -15,6 +16,8 @@ const About = () => {
 
   return (
     <>
+    <AnimationOnScroll 
+    animateIn='animate__fadeIn'>
       <h1 className="about-title">
         <TextAnimate
           stringArray={aboutArray}
@@ -42,6 +45,7 @@ const About = () => {
           hopefully provide value to those who enjoy it as customers.
         </h2>
       </div>
+      </AnimationOnScroll>
     </>
   )
 }

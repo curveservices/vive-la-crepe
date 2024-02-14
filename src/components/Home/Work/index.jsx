@@ -17,9 +17,11 @@ import summer from '../../../assets/images/summer_fest_logo-3000-1875-1024x640.p
 import big from '../../../assets/images/The_Big_Nibble_2016.png'
 import truro from '../../../assets/images/truro_food_festival.png'
 import yule from '../../../assets/images/yule.png'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Work = () => {
   return (
+    <AnimationOnScroll animateIn='animate__fadeIn'>
     <div className="body">
       <div className="marquee">
         <div className="marquee__group">
@@ -65,6 +67,7 @@ const Work = () => {
         </div>
       </div>
     </div>
+    </AnimationOnScroll>
   )
 }
 
