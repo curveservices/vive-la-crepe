@@ -1,15 +1,20 @@
 .body {
-  --space: 2px;
+  min-height: 40vh;
+}
+
+.body {
+  --space: 2rem;
+
   display: grid;
   align-content: center;
   overflow: hidden;
   gap: var(--space);
-
-  font-family: 'Corben', system-ui, sans-serif;
+  width: 100%;
+  font-family: "Corben", system-ui, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding: 50px 0;
-  margin-bottom: 50px;
+  margin: 70px 0;
+  
 }
 
 .marquee {
@@ -19,9 +24,8 @@
   display: flex;
   overflow: hidden;
   user-select: none;
-  height: 200px;
   gap: var(--gap);
-  transform: skewY(-4deg);
+  transform: skewY(-3deg);
 }
 
 .marquee__group {
@@ -41,7 +45,9 @@
 }
 
 .marquee__group img {
-  object-fit: cover;
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: contain;
   border-radius: 1rem;
 }
 
@@ -64,10 +70,7 @@
 }
 
 .marquee--borders {
-  --duration: 100s;
   border-block: 3px solid #29323e;
-  padding-block: 0.75rem;
-  height: 30px;
 }
 
 .marquee--reverse .marquee__group {

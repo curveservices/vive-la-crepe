@@ -11,7 +11,7 @@ const Layout = () => {
       <header className="header">
         <Navbar />
         <Link to="/">
-          <img src={Logo} />
+          <img className='logo' src={Logo} />
         </Link>
         <SocialIcons />
       </header>

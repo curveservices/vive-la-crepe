@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import TextAnimate from '../AnimatedLetters/TextAnimate'
 import './Home.scss'
-import vive from '../../assets/images/Vive+La+Crepe+street+food.jpeg'
+import vive from '../../assets/images/Vive+La+Crepe+street+food.png'
 import About from './About/About'
 import Loader from 'react-loaders'
 import Work from './Work'
@@ -50,6 +50,7 @@ const Home = () => {
           <img src={vive} alt="Vive La Crepe food stand" />
         </div>
         <About />
+        <hr />
         <Work />
       </div>
       <Loader type="line-spin-fade-loader" />
