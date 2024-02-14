@@ -1,25 +1,48 @@
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.app{
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo {
+    object-fit: cover;
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+  
+  .page {
+    margin: 1em;
+  }
+  
+  .container {
+    will-change: contents;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    font-size: 28px;
+    background: #ec2d32;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: #29323e;
+      color: #fff;
+    }
+  }
+
 }
 
-.logo {
-  object-fit: cover;
-  width: 150px;
-  margin-left: 150px;
-  margin-top: 10px;
-}
 
-.page {
-  margin: 1em;
-}
 
-.container {
-  will-change: contents;
-  position: absolute;
-  transform-style: preserve-3d;
-}
 
 @media screen and (max-width: 450px) {
   img {
