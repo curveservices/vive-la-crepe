@@ -1,116 +1,113 @@
 .navbar {
+  top: 10%;
+  height: 100%;
+
+  .hamburger {
+    position: absolute;
+    top: 8.5%;
+    left: 10%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav {
+    width: 15%;
     top: 10%;
     height: 100%;
 
-
-    .hamburger {
-        position: absolute;
-        top: 8.5%;
-        left: 10%;
+    &.active {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0%;
+      left: 0px;
+      text-align: center;
+      height: 100%;
+      background: #e8e8e8;
+      animation: bounceInLeft 0.5s;
     }
 
-    nav { display: none; }
+    a {
+      font-size: 22px;
+      display: block;
+      line-height: 60px;
+      text-decoration: none;
 
-    nav {
-        width: 15%;
-        top: 10%;
-        height: 100%;
-    
-        &.active {
-            display: block;
-            position: absolute;
-            z-index: 1;
-            top: 0%;
-            left: 0px;
-            text-align: center;
-            height: 100%;
-            background: #e8e8e8;
-            animation: bounceInLeft 0.5s;
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ec2d32;
+        transform: scale(1.3);
+
+        svg {
+          opacity: 0;
         }
-            
-            a {
-            font-size: 22px;
-            display: block;
-            line-height: 60px;
-            text-decoration: none;
-            
 
-            i {
-                transition: all 0.3s ease-out;
-            }
+        &:after {
+          opacity: 1;
+        }
+      }
 
-            &:hover {
-                color: #ec2d32;
-                transform: scale(1.3);
+      &:after {
+        content: '';
+        font-size: 16px;
+        letter-spacing: 3px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+        font-family: 'Lato';
+      }
 
-                svg {
-                opacity: 0;
-                }
-
-                &:after {
-                opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 16px;
-                letter-spacing: 3px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-                font-family: 'Lato';
-            }
-
-            &:nth-child(2) {
-                &::after {
-                content: 'HOME';
-                }
-            }
-            }
-
-            a.aboutLink {
-            &::after {
-                content: 'ABOUT US';
-            }
-            }
-
-            a.menuLink {
-            &::after {
-                content: 'OUR MENU';
-            }
-            }
-            a.blogLink {
-            &::after {
-                content: 'BLOG';
-            }
-            }
-            a.contactLink {
-            &::after {
-                content: 'CONTACT US';
-            }
-            }
-        
-            .close {
-                position: relative;
-                left: -50px;
-                padding: 40px;
-            }
-        
+      &:nth-child(2) {
+        &::after {
+          content: 'HOME';
+        }
+      }
     }
 
-    .hide {
-        display: none;
+    a.aboutLink {
+      &::after {
+        content: 'ABOUT US';
+      }
     }
+
+    a.menuLink {
+      &::after {
+        content: 'OUR MENU';
+      }
+    }
+    a.blogLink {
+      &::after {
+        content: 'BLOG';
+      }
+    }
+    a.contactLink {
+      &::after {
+        content: 'CONTACT US';
+      }
+    }
+
+    .close {
+      position: relative;
+      left: -50px;
+      padding: 40px;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .navbar {
-
-
-    }
+  .navbar {
+  }
 }

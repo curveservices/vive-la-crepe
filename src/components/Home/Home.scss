@@ -1,69 +1,69 @@
 @font-face {
-    font-family: 'Boho';
-    src: url('../../assets/fonts/Boho.otf');
+  font-family: 'Boho';
+  src: url('../../assets/fonts/Boho.otf');
 }
 
 .homePage {
-    .textBox {
-        position: relative;
-        left: 15%;
-        top: 15%;
-        right: 0;
-        width: 70%;
-    }
+  .textBox {
+    position: relative;
+    left: 15%;
+    top: 15%;
+    right: 0;
+    width: 70%;
 
     h1 {
-        font-family: 'Boho';
-        font-weight: 100;
-        color: #29323e;
-        font-size: 120px;
-        margin: 0;
-        letter-spacing: 2px; 
+      font-family: 'Boho';
+      font-weight: 100;
+      color: #29323e;
+      font-size: 120px;
+      margin: 0;
+      letter-spacing: 2px;
     }
 
     h2 {
-        color: #6e6e6e;
-        font-weight: 400;
-        font-family: 'Lato';
-        letter-spacing: 2px;
-        animation: fadeIn 1s 1.8s backwards;
-        margin: 15px;
+      color: #6e6e6e;
+      font-weight: 400;
+      font-family: 'Lato';
+      letter-spacing: 2px;
+      animation: fadeIn 1s 1.8s backwards;
+      margin: 15px;
     }
 
-    .flatBtn{
-        position: relative;
-        top: 50px;
-        left: 15px;
-        color: #29323e;
-        font-size: 13px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #29323e;
-        animation: fadeIn 1s 1.8s backwards;
-        white-space: nowrap;
-        border-radius: 4px;
+    .flatBtn {
+      position: relative;
+      top: 50px;
+      left: 15px;
+      color: #29323e;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #29323e;
+      animation: fadeIn 1s 1.8s backwards;
+      white-space: nowrap;
+      border-radius: 4px;
 
-        &:hover {
-            background: #29323e;
-            color: #fff;
-        }
+      &:hover {
+        background: #29323e;
+        color: #fff;
+      }
     }
 
     .imgContainer {
-        opacity: 0.9;
-        margin: auto;
-        
-        img {
-            width: 350px;
-            height: 400px;
-            border-radius: 5px;
-            position: relative;
-            top: -175px;
-            left: 50%;
-            animation: fadeIn 1s 1.8s backwards;
-        }
+      opacity: 0.9;
+      margin: auto;
+
+      img {
+        width: 350px;
+        height: 400px;
+        border-radius: 5px;
+        position: relative;
+        top: -175px;
+        left: 50%;
+        animation: fadeIn 1s 1.8s backwards;
+      }
     }
+  }
 }

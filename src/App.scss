@@ -4,36 +4,33 @@ $primary-color: #29323e;
 @import 'loaders.css/src/animations/line-spin-fade-loader.scss';
 
 @font-face {
-    font-family: 'Boho';
-    src: url('../../assets/fonts/Boho.otf');
+  font-family: 'Boho';
+  src: url('../../assets/fonts/Boho.otf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 main {
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-a {
-    cursor: pointer; ;
+  min-height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 input,
 textarea {
-    font-family: 'Lato Black';
+  font-family: 'Lato Black';
 }
 
 .loader-active {
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    top: 10%;
-    bottom: 0;
-    width: 50px;
-    height: auto;
-    animation: fadeOut 1s 1s;
-    animation-fill-mode: forwards;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 10%;
+  bottom: 0;
+  width: 50px;
+  height: auto;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
