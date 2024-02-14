@@ -2,64 +2,55 @@ import {
     faBars, 
     faBlog, 
     faEnvelopeOpen, 
-    faHome, 
-    faUser, 
+    faHome,  
     faUtensils,
     faClose
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Navbar.module.scss'
+import './Navbar.scss'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
     
     return ( 
-        <div className={styles.navbar}>
-            <nav className={showNav ? styles.active : ''}>
+        <div className='navbar'>
+            <nav className={showNav ? 'active' : ''}>
             <FontAwesomeIcon 
                 icon={faClose} 
                 color='#29323e'
-                size='3x'
-                className={styles.close}
+                size='2x'
+                className='close'
                 onClick={() => setShowNav(false)}/>
                 <NavLink
                 exact='true'
-                activeclassname="actice"
-                className={styles.homeLink}
+                activeclassname="active"
+                className='homeLink'
                 to='/'
                 onClick={() => setShowNav(false)} >
                     <FontAwesomeIcon icon={faHome} color="#29323e" />
                 </NavLink>
                 <NavLink
                 exact='true'
-                activeclassname="actice"
-                className={styles.aboutLink}
-                to='/about'
-                onClick={() => setShowNav(false)} >
-                    <FontAwesomeIcon icon={faUser} color="#29323e" />
-                </NavLink>
-                <NavLink
-                exact='true'
-                activeclassname="actice"
-                className={styles.menuLink}
+                activeclassname="active"
+                className='menuLink'
                 to='/menu'
                 onClick={() => setShowNav(false)} >
                     <FontAwesomeIcon icon={faUtensils} color="#29323e" />
                 </NavLink>
                 <NavLink
                 exact='true'
-                activeclassname="actice"
-                className={styles.blogLink}
+                activeclassname="active"
+                className='blogLink'
                 to='/blog'
                 onClick={() => setShowNav(false)} >
                     <FontAwesomeIcon icon={faBlog} color="#29323e" />
                 </NavLink>
                 <NavLink
                 exact='true'
-                activeclassname="actice"
-                className={styles.contactLink}
+                activeclassname="active"
+                className='contactLink'
                 to='/blog'
                 onClick={() => setShowNav(false)} >
                     <FontAwesomeIcon icon={faEnvelopeOpen} color="#29323e" />
@@ -70,7 +61,7 @@ const Navbar = () => {
                 icon={faBars}
                 color="29323e"
                 size="2x"
-                className={`${showNav ? styles.hide : styles.hamburger}`}
+                className={showNav ? 'hide' : 'hamburger'}
             />
         </div>
      );

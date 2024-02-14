@@ -1,9 +1,14 @@
 $primary-color: #29323e;
 
+@import 'animate.css';
+@import 'loaders.css/src/animations/line-spin-fade-loader.scss';
+
 @font-face {
-    font-family: "Lato Black";
-    src: url('./assets/fonts/Lato-Black.ttf') format('ttf');
+    font-family: 'Boho';
+    src: url('../../assets/fonts/Boho.otf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 input,
 textarea {
@@ -16,7 +21,7 @@ textarea {
     right: 0;
     left: 0;
     margin: auto;
-    top: 50%;
+    top: 20%;
     bottom: 0;
     width: 50px;
     height: auto;

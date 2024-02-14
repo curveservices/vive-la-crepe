@@ -1,0 +1,25 @@
+@import 'animate.css';
+
+.textAnimate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 0.5s forwards;
+    min-width: 10px;
+  }
+  
+  .textAnimateHover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+  
+    &:hover {
+      animation: rubberBand 1s;
+      color: #ec2d32;
+    }
+  }
+  
+  @for $i from 1 through 30 {
+    .textAnimate._#{$i} {
+      animation-delay: #{$i / 10}s;
+    }
+  }
