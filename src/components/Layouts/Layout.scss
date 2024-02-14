@@ -1,21 +1,22 @@
-.app{
+.app {
+  max-height: 100vh;
   .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
+
   .logo {
     object-fit: cover;
     width: 150px;
     margin-left: 150px;
     margin-top: 10px;
   }
-  
+
   .page {
     margin: 1em;
   }
-  
+
   .container {
     will-change: contents;
     position: absolute;
@@ -38,11 +39,7 @@
       color: #fff;
     }
   }
-
 }
-
-
-
 
 @media screen and (max-width: 450px) {
   img {

@@ -45,12 +45,10 @@ const Home = () => {
         <Link to="/contact" className="flatBtn">
           CONTACT US
         </Link>
-
         <div className="imgContainer">
           <img src={vive} alt="Vive La Crepe food stand" />
         </div>
         <About />
-        <hr />
         <Work />
       </div>
       <Loader type="line-spin-fade-loader" />
