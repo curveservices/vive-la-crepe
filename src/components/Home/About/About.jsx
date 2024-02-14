@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import TextAnimate from '../AnimatedLetters/TextAnimate';
-import styles from '../Home/Home'
+import TextAnimate from '../../AnimatedLetters/TextAnimate';
+import styles from '../Home'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('textAnimate');

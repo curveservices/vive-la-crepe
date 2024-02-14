@@ -6,10 +6,10 @@
 .homePage {
     .textBox {
         position: relative;
-        left: 20%;
-        top: 5%;
+        left: 15%;
+        top: 15%;
         right: 0;
-        width: 60%;
+        width: 70%;
     }
 
     h1 {
@@ -53,8 +53,6 @@
     }
 
     .imgContainer {
-        z-index: 0;
-        width: inherit;
         opacity: 0.9;
         margin: auto;
         
@@ -63,7 +61,7 @@
             height: 400px;
             border-radius: 5px;
             position: relative;
-            top: -200px;
+            top: -175px;
             left: 50%;
             animation: fadeIn 1s 1.8s backwards;
         }
