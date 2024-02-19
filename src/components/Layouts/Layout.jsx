@@ -7,17 +7,17 @@ import './Layout.scss'
 import Footer from '../Footer/Footer'
 
 const Layout = () => {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.pageYOffset > 400) {
-        setShowButton(true);
+        setShowButton(true)
       } else {
-        setShowButton(false);
+        setShowButton(false)
       }
-    });
-  }, []);
+    })
+  }, [])
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -40,10 +40,10 @@ const Layout = () => {
         </main>
       </div>
       {showButton && (
-            <button className="back-to-top" onClick={scrollToTop}>
-              &#11014;
-            </button>
-          )}
+        <button className="back-to-top" onClick={scrollToTop}>
+          &#11014;
+        </button>
+      )}
       <footer>
         <Footer />
       </footer>

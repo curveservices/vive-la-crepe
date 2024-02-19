@@ -8,7 +8,6 @@
   animation-delay: 1s;
 }
 
-
 .contact-page,
 .homePage,
 .menu-page {
@@ -31,7 +30,7 @@
   p {
     font-size: 16px;
     color: #6e6e6e;
-    font-family: "Lato";
+    font-family: 'Lato';
     font-weight: normal;
     min-width: fit-content;
     margin-top: -20px;
@@ -62,27 +61,25 @@
   width: 100px;
   margin-left: 150px;
   margin-top: 15px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  font-size: 28px;
+  background: #ec2d32;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px;
+  cursor: pointer;
+  animation: fadeIn 1s;
+
+  &:hover {
+    background: #29323e;
+    color: #fff;
   }
-
-  .back-to-top {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    font-size: 28px;
-    background: #ec2d32;
-    border-radius: 100px;
-    border: none;
-    box-shadow: 0 5px 10px;
-    cursor: pointer;
-    animation: fadeIn 1s;
-
-  
-    &:hover {
-      background: #29323e;
-      color: #fff;
-    }
-  }
-
+}
 
 @media screen and (max-width: 450px) {
   img {

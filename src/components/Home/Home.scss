@@ -5,12 +5,12 @@
 .homePage {
   .text-box {
     margin: 2em 10em;
-  
-  .img-container {
+
+    .img-container {
       display: flex;
       justify-content: end;
       height: 350px;
-      
+
       .home-img {
         position: relative;
         width: 400px;
@@ -25,26 +25,25 @@
     .strap {
       margin-bottom: 3em;
     }
-  
-  .flat-btn {
-    color: #ec2d32;
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-family: 'Boho';
-    text-decoration: none;
-    padding: 10px 18px;
-    margin-top: 50px;
-    border: 1px solid #29323e;
-    animation: fadeIn 1s 1.8s backwards;
-    white-space: nowrap;
-    border-radius: 4px;
 
-    &:hover {
-      background: #29323e;
-      color: #fff;
+    .flat-btn {
+      color: #ec2d32;
+      font-size: 2em;
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-family: 'Boho';
+      text-decoration: none;
+      padding: 10px 18px;
+      margin-top: 50px;
+      border: 1px solid #29323e;
+      animation: fadeIn 1s 1.8s backwards;
+      white-space: nowrap;
+      border-radius: 4px;
+
+      &:hover {
+        background: #29323e;
+        color: #fff;
+      }
     }
   }
 }
-}
-  

@@ -21,52 +21,58 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Work = () => {
   return (
-    <AnimationOnScroll animateIn='animate__fadeIn'>
-    <div className="body">
-      <div className="marquee">
-        <div className="marquee__group">
-          <img src={board} alt="boardmasters" />
-          <img src={cardiff} alt="homeless world cup" />
-          <img src={cowes} alt="Lendy cowes week" />
-          <img src={ideal} alt="ideal home show" />
-          <img src={volvo} alt="volvo ocean race" />
+    <AnimationOnScroll animateIn="animate__fadeIn">
+      <div className="body">
+        <div className="marquee">
+          <div className="marquee__group">
+            <img src={board} alt="boardmasters" />
+            <img src={cardiff} alt="homeless world cup" />
+            <img src={cowes} alt="Lendy cowes week" />
+            <img src={ideal} alt="ideal home show" />
+            <img src={volvo} alt="volvo ocean race" />
+          </div>
+          <div aria-hidden="true" className="marquee__group">
+            <img src={mfdf} alt="manchester f and d festival" />
+            <img src={lytham} alt="lytham festival" />
+            <img src={foodies} alt="foodies festival" />
+            <img src={borough} alt="borough market" />
+          </div>
         </div>
-        <div aria-hidden="true" className="marquee__group">
-          <img src={mfdf} alt="manchester f and d festival" />
-          <img src={lytham} alt="lytham festival" />
-          <img src={foodies} alt="foodies festival" />
-          <img src={borough} alt="borough market" />
-        </div>
-      </div>
-      <div className="marquee marquee--borders">
-        <div className="marquee__group">
-          <div className='text' aria-hidden="true">Who we work with</div>
-          <div className='text' aria-hidden="true">Who we work with</div>
-          <div className='text' aria-hidden="true">Who we work with</div>
-        </div>
+        <div className="marquee marquee--borders">
+          <div className="marquee__group">
+            <div className="text" aria-hidden="true">
+              Who we work with
+            </div>
+            <div className="text" aria-hidden="true">
+              Who we work with
+            </div>
+            <div className="text" aria-hidden="true">
+              Who we work with
+            </div>
+          </div>
 
-        <div aria-hidden="true" className="marquee__group">
-          <div className='text'>Who we work with</div>
-          <div className='text'>Who we work with</div>
-          <div className='text'>Who we work with</div>
+          <div aria-hidden="true" className="marquee__group">
+            <div className="text">Who we work with</div>
+            <div className="text">Who we work with</div>
+            <div className="text">Who we work with</div>
+          </div>
+        </div>
+        <div className="marquee marquee--reverse">
+          <div className="marquee__group">
+            <img src={cambery} alt="camberly fest" />
+            <img src={elm} alt="elmsbridge" />
+            <img src={italiana} alt="festival italiana" />
+            <img src={fested} alt="eat and drink festival" />
+            <img src={summer} alt="summer fest" />
+          </div>
+          <div aria-hidden="true" className="marquee__group">
+            <img src={main} alt="eat and drink festival" />
+            <img src={big} alt="The biig nibble" />
+            <img src={truro} alt="Truro festival" />
+            <img src={yule} alt="yule festival" />
+          </div>
         </div>
       </div>
-      <div className="marquee marquee--reverse">
-        <div className="marquee__group">
-          <img src={cambery} alt="camberly fest" />
-          <img src={elm} alt="elmsbridge" />
-          <img src={italiana} alt="festival italiana" />
-          <img src={fested} alt="eat and drink festival" />
-          <img src={summer} alt="summer fest" />
-        </div>
-        <div aria-hidden="true" className="marquee__group">
-          <img src={main} alt="eat and drink festival" />
-          <img src={big} alt="The biig nibble" />
-          <img src={truro} alt="Truro festival" />
-          <img src={yule} alt="yule festival" />
-        </div>
-      </div>
-    </div>
     </AnimationOnScroll>
   )
 }
