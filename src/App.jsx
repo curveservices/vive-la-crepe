@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './App.scss'
+import NotFound from './components/404'
 import Contact from './components/Contact'
 import Home from './components/Home/Home'
 import Layout from './components/Layouts/Layout'
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="menu" element={<Menu />} />
       <Route path="contact" element={<Contact />} />
+      <Route path='*' element={<NotFound />} />
     </Route>
   )
 )

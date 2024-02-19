@@ -1,10 +1,4 @@
 .menu-page {
-  padding-right: 50px;
-  padding-left: 100px;
-  width: calc(100% - 150px);
-  height: 100%;
-  overflow: auto;
-
   .text-box {
     margin: 2em 10em;
   }
@@ -22,7 +16,7 @@
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    max-width: calc(23% - 10px);
+    max-width: calc(23% - 0px);
     
 
     .menu-image {

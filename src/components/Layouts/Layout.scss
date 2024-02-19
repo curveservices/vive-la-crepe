@@ -1,7 +1,4 @@
 .page {
-  width: 100%;
-  height: auto;
-  margin: 1em;
   will-change: contents;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
@@ -49,11 +46,12 @@
   }
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100px;
+  
 }
 
 .logo {

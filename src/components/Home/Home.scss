@@ -4,11 +4,11 @@
 }
 .homePage {
   .text-box {
-    margin: 2em 10em;
+    margin: 2em 8em;
 
     .img-container {
       display: flex;
-      justify-content: end;
+      justify-content: space-evenly;
       height: 350px;
 
       .home-img {
@@ -16,7 +16,8 @@
         width: 400px;
         height: 500px;
         border-radius: 5px;
-        right: 0%;
+        right: 0;
+        left: 20%;
         top: -16.5em;
         opacity: 0.8;
         animation: fadeIn 1s 1.8s backwards;
