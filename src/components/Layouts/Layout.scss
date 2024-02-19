@@ -64,8 +64,8 @@
   }
 
   .back-to-top {
-    position: absolute;
-    bottom: 60%;
+    position: fixed;
+    bottom: 80px;
     right: 20px;
     font-size: 28px;
     background: #ec2d32;
@@ -73,6 +73,8 @@
     border: none;
     box-shadow: 0 5px 10px;
     cursor: pointer;
+    animation: fadeIn 1s;
+
   
     &:hover {
       background: #29323e;
