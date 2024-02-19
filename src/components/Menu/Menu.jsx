@@ -28,8 +28,8 @@ const Menu = () => {
             Our sweet crepes contain gluten and dairy &apm; our galettes are
             naturally gluten free
           </h2>
-          <Card />
         </div>
+        <Card />
       </div>
       <Loader type="line-spin-fade-loader" />
     </>
