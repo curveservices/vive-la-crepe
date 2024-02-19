@@ -49,9 +49,7 @@ const Home = () => {
         <div className="img-container">
           <img className="home-img" src={vive} alt="Vive La Crepe food stand" />
           </div>
-          <div className="sep"></div>
           <About />
-          <div className="sep"></div>
         <Work />
       </div>
       </div>

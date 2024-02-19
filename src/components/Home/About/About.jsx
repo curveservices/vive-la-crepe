@@ -6,7 +6,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('textAnimate')
-  const aboutArray = ['A', 'b', 'o', 'u', 't', ' ', 'U', 's']
+  const pageArray = ['A', 'b', 'o', 'u', 't', ' ', 'U', 's']
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +21,7 @@ const About = () => {
         <div className="about-title">
           <h1>
         <TextAnimate
-          stringArray={aboutArray}
+          stringArray={pageArray}
           letterClass={letterClass}
           idx={15}
         />
