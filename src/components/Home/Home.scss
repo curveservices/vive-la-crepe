@@ -17,7 +17,8 @@
         height: 500px;
         border-radius: 5px;
         right: 0%;
-        top: -18em;
+        top: -16.5em;
+        opacity: 0.8;
         animation: fadeIn 1s 1.8s backwards;
       }
     }
@@ -28,8 +29,8 @@
 
     .flat-btn {
       color: #ec2d32;
-      font-size: 2em;
-      font-weight: 300;
+      font-size: 2.5em;
+      font-weight: 600;
       letter-spacing: 2px;
       font-family: 'Boho';
       text-decoration: none;
