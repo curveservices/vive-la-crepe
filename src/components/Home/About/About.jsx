@@ -17,14 +17,17 @@ const About = () => {
   return (
     <>
     <AnimationOnScroll 
-    animateIn='animate__fadeIn'>
-      <h1 className="about-title">
+        animateIn='animate__fadeIn'>
+        <div className="about-title">
+          <h1>
         <TextAnimate
           stringArray={aboutArray}
           letterClass={letterClass}
           idx={15}
         />
       </h1>
+      </div>
+      
       <img className="left" src={logo} alt="logo" />
       <div className="text-content">
         <h2>

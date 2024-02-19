@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import TextAnimate from '../AnimatedLetters/TextAnimate'
 import './Home.scss'
-import vive from '../../assets/images/Vive+La+Crepe+street+food.png'
+import vive from '../../assets/images/Vive+La+Crepe+street+food.png';
 import About from './About/About'
 import Loader from 'react-loaders'
 import Work from './Work'
@@ -28,12 +28,13 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('textAnimateHover')
-    }, 4000)
+    }, 3000)
   }, [])
 
   return (
-    <div className="container homePage">
-      <div className="textBox">
+    <>
+    <div className="homePage">
+      <div className="text-box">
         <h1>
           <TextAnimate
             stringArray={homeArray}
@@ -41,18 +42,21 @@ const Home = () => {
             idx={15}
           />
         </h1>
-        <h2>A guilty pleasure made innocent</h2>
-        <Link to="/contact" className="flatBtn">
-          CONTACT US
+        <h2 className='strap'>A guilty pleasure made innocent</h2>
+        <Link to="/contact" className="flat-btn">
+           Get in touch
         </Link>
-        <div className="imgContainer">
-          <img src={vive} alt="Vive La Crepe food stand" />
-        </div>
-        <About />
+        <div className="img-container">
+          <img className="home-img" src={vive} alt="Vive La Crepe food stand" />
+          </div>
+          <div className="sep"></div>
+          <About />
+          <div className="sep"></div>
         <Work />
       </div>
+      </div>
       <Loader type="line-spin-fade-loader" />
-    </div>
+    </>
   )
 }
 

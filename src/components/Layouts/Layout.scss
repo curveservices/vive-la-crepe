@@ -1,31 +1,71 @@
-.app {
-  max-height: 100vh;
-  .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.page {
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  will-change: contents;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+
+.contact-page,
+.homePage {
+  width: 100%;
+  .text-box {
+    margin: 2em 5em 2em 8em;
   }
 
-  .logo {
-    object-fit: cover;
-    width: 150px;
-    margin-left: 150px;
-    margin-top: 10px;
+  h1 {
+    font-size: 120px;
+    font-family: 'Boho';
+    color: #29323e;
+    font-weight: 100;
+    margin: 0;
+    position: relative;
+    left: -10px;
+    letter-spacing: 3px;
   }
 
-  .page {
-    margin: 1em;
+  p {
+    font-size: 16px;
+    color: #6e6e6e;
+    font-family: "Lato";
+    font-weight: normal;
+    min-width: fit-content;
+    margin-top: -20px;
+    padding-right: 15px;
+    animation: fadeIn 1s 1.8s backwards;
   }
 
-  .container {
-    will-change: contents;
-    position: absolute;
-    transform-style: preserve-3d;
+  h2 {
+    color: #6e6e6e;
+    font-weight: 400;
+    font-family: 'Lato';
+    letter-spacing: 2px;
+    line-height: 1.5;
+    animation: fadeIn 1s 1.8s backwards;
+    margin: 0 0 1em 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  object-fit: cover;
+  width: 100px;
+  margin-left: 150px;
+  margin-top: 15px;
   }
 
   .back-to-top {
-    position: fixed;
-    bottom: 200px;
+    position: absolute;
+    bottom: 60%;
     right: 20px;
     font-size: 28px;
     background: #ec2d32;
@@ -33,13 +73,13 @@
     border: none;
     box-shadow: 0 5px 10px;
     cursor: pointer;
-
+  
     &:hover {
       background: #29323e;
       color: #fff;
     }
   }
-}
+
 
 @media screen and (max-width: 450px) {
   img {

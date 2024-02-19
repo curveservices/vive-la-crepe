@@ -11,9 +11,9 @@ const Layout = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      window.pageYOffset > 500 ? setShowButton(true) : setShowButton(false)
+      window.pageYOffset > 200 ? setShowButton(true) : setShowButton(false)
     })
-  }, [])
+  }, [showButton])
 
   const scrollToTop = () => {
     window.scrollTo({

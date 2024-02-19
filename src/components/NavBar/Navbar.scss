@@ -4,7 +4,7 @@
 
   .hamburger {
     position: absolute;
-    top: 8.5%;
+    top: 6.5%;
     left: 10%;
   }
 
@@ -26,7 +26,7 @@
       text-align: center;
       height: 100%;
       background: #e8e8e8;
-      animation: bounceInLeft 0.5s;
+      animation: slideInLeft 0.5s;
     }
 
     a {

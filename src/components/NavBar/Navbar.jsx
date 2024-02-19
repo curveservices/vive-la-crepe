@@ -45,17 +45,8 @@ const Navbar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
-          className="blogLink"
-          to="/blog"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faBlog} color="#29323e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
           className="contactLink"
-          to="/blog"
+          to="/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelopeOpen} color="#29323e" />

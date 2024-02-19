@@ -40,15 +40,15 @@ const Work = () => {
       </div>
       <div className="marquee marquee--borders">
         <div className="marquee__group">
-          <p>Who we work with</p>
-          <p aria-hidden="true">Who we work with</p>
-          <p aria-hidden="true">Who we work with</p>
+          <div className='text' aria-hidden="true">Who we work with</div>
+          <div className='text' aria-hidden="true">Who we work with</div>
+          <div className='text' aria-hidden="true">Who we work with</div>
         </div>
 
         <div aria-hidden="true" className="marquee__group">
-          <p>Who we work with</p>
-          <p>Who we work with</p>
-          <p>Who we work with</p>
+          <div className='text'>Who we work with</div>
+          <div className='text'>Who we work with</div>
+          <div className='text'>Who we work with</div>
         </div>
       </div>
       <div className="marquee marquee--reverse">
