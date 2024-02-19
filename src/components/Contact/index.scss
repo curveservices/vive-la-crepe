@@ -1,0 +1,139 @@
+.contact-page {
+  display: flex;
+  width: 100%;
+  height: 80%;
+
+  .text-box {
+    width: 40%;
+    margin-top: 0 !important;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        animation: fadeInDown 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+      }
+
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #c5c5c5;
+      height: 50px;
+      font-size: 18px;
+      color: #29323e;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #c5c5c5;
+      height: 50px;
+      font-size: 18px;
+      color: #29323e;
+      padding: 20px;
+      min-height: 100px;
+      box-sizing: border-box;
+    }
+
+    .flat-btn {
+      color: #29323e;
+      background: 0 0;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #29323e;
+      border-radius: 4px;
+      float: right;
+      text-transform: uppercase;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+
+  .info-map {
+    position: absolute;
+    background: #000000;
+    top: 10px;
+    right: 1%;
+    z-index: 999999;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: forwards;
+
+    span {
+      font-size: 16px;
+      display: block;
+      padding-top: 20px;
+      color: #26c9ff;
+    }
+  }
+}
+
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 49%;
+  height: 550px;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+
+}
+
+.leaflet-container {
+
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+// @media screen and (max-width: 1200px) {
+//   .map-wrap {
+//     float: none;
+//     width: 100%;
+//     height: 400px;
+//     margin: 0;
+//   }
+
+//   .info-map {
+//     display: none;
+//   }
+// }
