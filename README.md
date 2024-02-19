@@ -4,7 +4,7 @@
 
 ## PC View 👇
 
-<img width="1337" alt="vive" src="https://github.com/curveservices/vive-la-crepe/assets/101556296/0653918d-21c0-444c-9999-6451ec56ecaa">
+<img width="1017" alt="Screenshot 2024-02-19 at 14 52 15" src="https://github.com/curveservices/vive-la-crepe/assets/101556296/f666e8c7-7748-4629-a7a7-e1f89c961e59">
 
 ## Overview
 
