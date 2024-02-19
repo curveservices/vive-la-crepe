@@ -1,6 +1,6 @@
 # Project: Vive la Crepe
 
-## Live Demo 👉 
+## Live Demo 👉  [Vive la Crepe](https://vive-la-crepe.netlify.app/)
 
 ## PC View 👇
 
