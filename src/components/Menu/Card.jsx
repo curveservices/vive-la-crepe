@@ -26,25 +26,22 @@ const Card = () => {
 
     useEffect(() => {
         fetchData()
-    }, []);
+    },[]);
 
     return ( 
-        <>
-            <div className="menu-container" >
-                {menu.map((item) => {
-                    return (
-                        <div className="card" key={item.id}>
-                            <img src={item.img} alt='crepe image' className='menu-image' />
-                            <div className="content">
-                                <h3 className='name'>{ item.name }</h3>
-                                <p className='desc'>{item.desc}</p>
-                            </div>
-                            
+        <div className="menu-container" >
+            {menu.map((item) => {
+                return (
+                    <div className="card" key={item.id}>
+                        <img src={item.img} alt='crepe image' className='menu-image' />
+                        <div className="content">
+                            <h3 className='name'>{ item.name }</h3>
+                            <p className='desc'>{item.desc}</p>
                         </div>
-                    )
-                })}
-            </div>
-        </>
+                    </div>
+                )
+            })}
+        </div>
      );
 }
  

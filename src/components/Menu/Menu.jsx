@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
 import TextAnimate from '../AnimatedLetters/TextAnimate';
 import Card from './Card';
 import './index.scss'
@@ -14,23 +15,23 @@ const Menu = () => {
     }, [])
     return ( 
         <>
-            <div className="menu-page">
-                <div className="text-box">
-                    <h1>
-                    <TextAnimate
-                    letterClass={letterClass}
-                    stringArray={pageArray}
-                    idx={15}/>
-                    </h1>
-                    <h2 className='strap'>
-                        Our sweet crepes contain gluten and dairy
-                        &apm; our galettes are naturally gluten free
+        <div className="menu-page">
+            <div className="text-box">
+                <h1>
+                <TextAnimate
+                letterClass={letterClass}
+                stringArray={pageArray}
+                idx={15}/>
+                </h1>
+                <h2 className='strap'>
+                    Our sweet crepes contain gluten and dairy
+                    &apm; our galettes are naturally gluten free
                     </h2>
-                    </div>
-                <Card />
+                    <Card />
+                </div>
                 
-           
-        </div>
+            </div>
+             <Loader type="line-spin-fade-loader" />
          
         </>
      );

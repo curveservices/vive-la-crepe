@@ -50,8 +50,8 @@ const Home = () => {
           <img className="home-img" src={vive} alt="Vive La Crepe food stand" />
           </div>
           <About />
-        <Work />
-      </div>
+          <Work />
+        </div>
       </div>
       <Loader type="line-spin-fade-loader" />
     </>
