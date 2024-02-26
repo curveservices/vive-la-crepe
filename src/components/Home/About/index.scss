@@ -13,3 +13,22 @@
   text-align: justify;
   margin-bottom: 3em;
 }
+
+@media screen and (max-width: 800px) {
+
+  .about-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+    .text-content{
+     margin-bottom: 0;
+    }
+
+    .left {
+      
+      width: 100px;
+      margin: 10px;
+      padding: 10px;
+    }
+}

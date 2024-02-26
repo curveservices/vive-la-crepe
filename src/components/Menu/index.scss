@@ -78,3 +78,44 @@
     }
   }
 }
+
+@media screen and (max-width:800px) {
+  .menu-page {
+    .text-box {
+      margin: 0em;
+    }
+
+    .strap {
+      text-align: center;
+      font-size: 18px;
+      padding: 0.5em 1em;
+    }
+    
+    .menu-container {
+      gap: 60px;
+      margin: 1em 2em;
+
+      .card {
+        height: 250px;
+        max-width: calc(40% - 0px);
+
+        .content {
+          bottom: 0px;
+        }
+        
+        .name {
+          font-size: 18px;
+          font-weight: 900;
+         
+        }
+        
+        .desc {
+          font-size: 12px;
+          
+        }
+      }
+    }
+
+  }
+  
+}

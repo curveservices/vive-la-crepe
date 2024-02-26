@@ -63,9 +63,11 @@ header {
 
 .back-to-top {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 200px;
+  right: 34px;
   font-size: 28px;
+  width: 60px;
+  height: 60px;
   background: #ec2d32;
   border-radius: 100px;
   border: none;
@@ -79,9 +81,48 @@ header {
   }
 }
 
-@media screen and (max-width: 450px) {
-  img {
-    object-fit: contain;
-    width: 100px;
+@media screen and (max-width: 800px) {
+  
+  .contact-page,
+  .homePage,
+  .menu-page {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    margin: 0;
+    .text-box{
+      margin: 3em 1em;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      gap: 0;
+    }
+    h1 {
+      font-size: 5.5em;
+    }
+    h2{
+      font-size: 18px;
+    }
   }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    .logo {
+      width: 100px;
+      margin-top: 15px;
+      margin-left: 120px;
+    }
+  
+  }
+
+  .back-to-top {
+    bottom: 180px;
+    width: 55px;
+    height: 55px;
+  }
+
 }

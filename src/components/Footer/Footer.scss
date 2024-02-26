@@ -29,3 +29,24 @@ footer {
     }
   }
 }
+
+@media screen and (max-width:800px) {
+  footer {
+    height: 50px;
+
+    .img-container {
+      display: inline-block;
+      justify-content:none;
+      align-items: none;
+      
+    
+      img {
+        width: 75px;
+        margin: 0px 10px;
+        text-align: center;
+        border-radius: 4px;
+        opacity: 0.7;
+      }
+    }
+  }
+}

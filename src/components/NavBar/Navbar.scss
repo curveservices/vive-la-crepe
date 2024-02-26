@@ -109,5 +109,16 @@
 
 @media screen and (max-width: 450px) {
   .navbar {
+    .hamburger {
+      position: absolute;
+      top: 4.5%;
+      left: 10%;
+    }
+
+    nav {
+      width: 30%;
+      top: 10%;
+      height: 100%;
+    }
   }
 }
