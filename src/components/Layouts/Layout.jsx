@@ -5,6 +5,8 @@ import Navbar from '../NavBar/Navbar'
 import Logo from '../../assets/images/vlc.png'
 import './Layout.scss'
 import Footer from '../Footer/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false)
@@ -41,7 +43,7 @@ const Layout = () => {
       </div>
       {showButton && (
         <button className="back-to-top" onClick={scrollToTop}>
-          &#11014;
+          <FontAwesomeIcon icon={faLongArrowAltUp}/>
         </button>
       )}
       <footer>
