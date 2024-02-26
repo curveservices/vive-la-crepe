@@ -43,7 +43,7 @@ const Layout = () => {
       </div>
       {showButton && (
         <button className="back-to-top" onClick={scrollToTop}>
-          <FontAwesomeIcon icon={faLongArrowAltUp}/>
+          <FontAwesomeIcon icon={faLongArrowAltUp} color='black'/>
         </button>
       )}
       <footer>
