@@ -44,7 +44,7 @@ const Home = () => {
           </h1>
           <h2 className="strap">A guilty pleasure made innocent</h2>
           <Link to="/contact" className="flat-btn">
-            Get in touch
+            Cntact Us
           </Link>
           <div className="img-container">
             <img
