@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="img-container">
         <img src={ncass} alt="ncass" />
         <img src={fh5} alt="food hygiene 5 star" />
-        <Link to="https://dev-paul.netlify.app/" target="_blank">
-          <p>Copyright Immutable Designs &copy; {year}</p>
+        <Link to="https://www.immutable-studio.co.uk/" target="_blank">
+          <p>Designed & Developed by Immutable Studio &copy; {year}</p>
         </Link>
       </div>
     </div>

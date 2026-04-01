@@ -1,6 +1,5 @@
 import {
   faBars,
-  faBlog,
   faEnvelopeOpen,
   faHome,
   faUtensils,
